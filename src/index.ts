@@ -117,7 +117,7 @@ Pretender.prototype = {
   checkPassthrough: function checkPassthrough(request) {
     let verb = request.method.toUpperCase();
     let path = parseURL(request.url).fullpath;
-    let recognized = this.hosts.forURL(request.url)[verb].recognize(path);
+    let recognized = this.hosts.forURL(request.url)[verb] && this.hosts.forURL(request.url)[verb].recognize(path);
     let match = recognized && recognized[0];
 
     if ((match && match.handler === PASSTHROUGH) || this.forcePassthrough)  {
