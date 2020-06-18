@@ -16,7 +16,8 @@
     "tests-only-ci": "karma start --single-run --browsers ChromeHeadlessNoSandbox",
     "lint": "jshint test",
     "eslint": "eslint src/**/*.ts test",
-    "test:server": "karma start --no-single-run"
+    "test:server": "karma start --no-single-run",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
