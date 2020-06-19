@@ -91,6 +91,7 @@ Pretender.prototype = {
   patch: verbify('PATCH'),
   head: verbify('HEAD'),
   options: verbify('OPTIONS'),
+  propfind: verbify('PROPFIND'),
   map: function(maps) {
     maps.call(this);
   },
