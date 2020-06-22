@@ -19,7 +19,8 @@ export default class Registry {
       DELETE: new RouteRecognizer(),
       PATCH: new RouteRecognizer(),
       HEAD: new RouteRecognizer(),
-      OPTIONS: new RouteRecognizer()
+      OPTIONS: new RouteRecognizer(),
+      PROPFIND: new RouteRecognizer()
     };
   }
 }
